@@ -1,0 +1,12 @@
+//var ps=require("fs")
+// ps.mkdirSync("node")
+// ps.writeFileSync("node/write.js","Helloo")
+//ps.appendFileSync("node/write.js","Filee")
+//data=ps.readFileSync("node/write.js","utf-8")
+//console.log(data.toString())
+//console.log(data)
+//ps.renameSync("node/write.js","node/read.js")
+//ps.urlSync("node/read.js")
+//ps.unlinkSync("node/read.js")
+//ps.unrmkdirSync("node")
+

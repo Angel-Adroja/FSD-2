@@ -1,0 +1,47 @@
+<!-- as asked below and 3 buttons. increse button to increase font. it should stop increse when the font size reaches to 200 px or stop button is click decrese button to the decrese button it should stop decreses when the font size reaches to 20 px or stop button is click. stop button increses and decreses.increses and decres interval is 1 sec and default size is 5 px-->
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Font Controller</title>
+</head>
+
+<body>
+<button onclick="increase()">Increase</button>
+<button onclick="decrease()">Decrease</button>
+<button onclick="stopFont()">Stop</button>
+<p id="p1">Sample Text</p>
+
+<script>
+
+let size = 15;
+
+
+       test= setInterval (function(){
+            document.getElementById("p").innerHTML=++a+ ++b;
+        },1000)
+
+      function stop(){
+          clearInterval(test)
+      }
+  
+
+
+function decrease(){
+
+    clearInterval(timer);
+
+    timer = setInterval(function(){
+        if(size > 20){
+            size--;
+            document.getElementById("p1").style.fontSize = size + "px";
+        }
+    },1000);
+}
+function stopFont(){
+    clearInterval(timer);
+}
+</script>
+</body>
+</html>
