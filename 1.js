@@ -1,17 +1,8 @@
+
 var express= require('express')
 var app=express();
-app.get('/',function(req,res){
-    //res.set("content-type","text/plain")
-    res.send("<h2>Hello</h2>")
-    //res.write("hieee")
-    //res.send()
-    app.get("/about",(req,res)=>{
-    res.set("content-type","text/HTML")
-    res.write("<h2>Hello</h2>")
-    res.end()
-    })
-    
-})
-app.listen(5000);
 
+app.use(express.static(__dirname))
+app.listen(1001)
 
+// write express js script to print msg in next line splitting by "." and use get method to submit the form data. two.html file contains form of text area forthe msg and submit button . 
